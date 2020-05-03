@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 /*import ReactDOM from 'react-dom';*/
-import TodoElement from './Atoms/TodoElement';
-import AddTodo from './Atoms/AddTodo';
+import TodoElement from './TodoElement';
+import AddTodo from './AddTodo';
+import CountApp from './CountApp';
 
 const App = () => {
   const[value, setValue] = useState("");
@@ -20,6 +21,11 @@ const App = () => {
     setValue("");
   };
 
+  const handleDelete = id => {
+    const newTodoList = todoList.filter(todo => todo.id !== id);
+    setTodoList(newTodoList);
+  };
+
   return(
     <div>
       <h1>TodoApp</h1>
@@ -29,10 +35,12 @@ const App = () => {
           {todoList.map(todo => (
             <TodoElement key={todo.id}
               content={todo.content}
+              onDelete={() => handleDelete(todo.id)}
             />
           ))}
         </ul>
       </div>
+      <CountApp />
     </div>
   );
 };
