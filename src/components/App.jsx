@@ -1,7 +1,8 @@
 import React from 'react';
-/*import ReactDOM from 'react-dom';*/
-import CountApp from './Atoms/CountApp';
 import { useState } from 'react';
+/*import ReactDOM from 'react-dom';*/
+import TodoElement from './Atoms/TodoElement';
+import AddTodo from './Atoms/AddTodo';
 
 const App = () => {
   const[value, setValue] = useState("");
@@ -12,23 +13,26 @@ const App = () => {
     setValue(newValue);
   };
 
-  const addTask = () => {
-    const newTodo = [...todoList, value];
-    setTodoList(newTodo);
+  const add = () => {
+    const newTodo = { id: todoList.length, content: value };
+    const newTodoList = [...todoList, newTodo];
+    setTodoList(newTodoList);
     setValue("");
   };
 
   return(
     <div>
       <h1>TodoApp</h1>
-      <input type="text" value={value} onChange= {handleChange} />
-      <button onClick={addTask}>追加</button>
-      <ul>
-        {todoList.map((todo, i) => (
-          <li key={i}>{todo}</li>
-        ))}
-      </ul>
-      <CountApp />
+      <div>
+        <AddTodo value={value} onChange={handleChange} add={add} />
+        <ul>
+          {todoList.map(todo => (
+            <TodoElement key={todo.id}
+              content={todo.content}
+            />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
