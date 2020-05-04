@@ -1,6 +1,10 @@
 import React from 'react';
 
-const AddTodo = props => {
+type Props = {
+
+}
+
+const AddTodo: React.FC<Props> = (props) => {
   return(
     <div>
       <input type="text" value={props.value} onChange={props.onChange} />
