@@ -1,6 +1,11 @@
 import React from 'react';
 
-const TodoElement = props => {
+type Props = {
+  content:string;
+  onDelete: () => void;
+}
+
+const TodoElement:React.FunctionComponent<Props> = (props) => {
   return(
     <li>
       {props.content}

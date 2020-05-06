@@ -5,11 +5,12 @@ import TodoElement from './TodoElement';
 import AddTodo from './AddTodo';
 import CountApp from './CountApp';
 
+
 const App = () => {
   const[value, setValue] = useState("");
   const[todoList, setTodoList] = useState([]);
 
-  const handleChange = e => {//classベースならhandleChange(e) {
+  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {//classベースならhandleChange(e) {
     const newValue = e.target.value;
     setValue(newValue);
   };
@@ -21,7 +22,7 @@ const App = () => {
     setValue("");
   };
 
-  const handleDelete = id => {
+  const handleDelete = (id:number) => {
     const newTodoList = todoList.filter(todo => todo.id !== id);
     setTodoList(newTodoList);
   };
