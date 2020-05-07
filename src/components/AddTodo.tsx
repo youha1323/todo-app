@@ -3,7 +3,7 @@ import React from 'react';
 type Props = {
   value: string;
   onChange:(event: React.ChangeEvent<HTMLInputElement>) => void;
-  add:()=>void;
+  add:()=>void
 }
 
 const AddTodo: React.FunctionComponent<Props> = (props) => {
