@@ -1,8 +1,8 @@
-import React, { useLayoutEffect } from 'react'
-import TaskItem from './TaskItem'
-import { Task } from '../Types'
+import React from 'react';
+import TaskItem from './TaskItem';
+import { Task } from '../Types';
 
-{/*タスクアイテムはpropsでTaskを受け取る*/}
+/*タスクアイテムはpropsでTaskを受け取る*/
 type Props = {    
   tasks: Task[]
 }
