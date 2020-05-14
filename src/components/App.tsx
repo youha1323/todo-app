@@ -3,7 +3,6 @@ import { useState } from 'react';
 /*import ReactDOM from 'react-dom';*/
 import TodoElement from './TodoElement';
 import AddTodo from './AddTodo';
-import CountApp from './CountApp';
 
 
 const App = () => {
