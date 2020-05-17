@@ -4,18 +4,28 @@ import { Task } from '../Types';
 /*タスクアイテムはpropsでTaskを受け取る*/
 type Props = {    
   task: Task
+  handleDone:(task: Task) => void
 }
 
-const TaskItem: React.FC<Props> = ({task}) => {
+const TaskItem: React.FC<Props> = ({ task, handleDone }) => {
 
   return (
-    <li>
+    <li className={task.done ? 'done' : ''}>
       <label>
-        <input type="checkbox" className="checkbox-input" />
+        <input
+          type="checkbox"
+          className="checkbox-input"
+          //handleDoneは引数taskを渡す必要があるので、関数の形にする
+          onClick={() => handleDone(task)}
+          //初期値の設定
+          defaultChecked={ task.done }
+        />
         {/*taskpropsを受け取るとtask.titleがcheckboxへ一覧で表示する作り*/}
         <span className="checkbox-label">{ task.title}</span>  
       </label>
-      <button className="btn is-delete">削除</button>
+      <button
+        className="btn is-delete"
+      >削除</button>
     </li>
   )
 }
