@@ -5,15 +5,7 @@ import { Task } from './Types'
 import './App.css'
 
 const initialState: Task[] = [//初期データを登録
-  {
-      id: 2,
-      title: '次のTodo',
-      done: false
-  },{
-      id: 1,
-      title: '最初のTodo',
-      done: true
-  }
+
 ]
 
 
