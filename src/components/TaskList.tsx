@@ -18,6 +18,13 @@ const TaskList: React.FC<Props> = ({ tasks, setTasks }) => {
       ))
     }
 
+    const handleDelete = (task: Task) => {
+      //filterを使ってidが合致しないものを返す
+      setTasks(prev => prev.filter(t =>
+        t.id !== task.id
+      ))
+    }
+
   return (
     <div className="inner">
       {
@@ -28,6 +35,7 @@ const TaskList: React.FC<Props> = ({ tasks, setTasks }) => {
                 key={task.id}
                 task={task}
                 handleDone={handleDone}
+                handleDelete={handleDelete}
             />
           )) }
         </ul>
