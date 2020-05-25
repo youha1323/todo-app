@@ -3,6 +3,7 @@ import PostList from '../components/PostList'
 import PostInput from '../components/PostInput';
 import { Post } from '../Types';
 import  User  from './User';
+import Menu from './Menu';
 import '../App.css';
 import Jack from '../img/Jack.png';
 import Ami from '../img/Ami.png';
@@ -26,6 +27,7 @@ const App: React.FC = () => {
     <div>
       <h1>褒めるアプリ</h1>
       <img src={Jack} width="100" height="150"/>
+      <Menu/>
       <PostInput posts={posts} setPosts={setPosts} />
       <PostList posts={posts} setPosts={setPosts}/>]
       
