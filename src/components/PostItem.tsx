@@ -27,7 +27,7 @@ const PostItem: React.FC<Props> = ({ post, handleDone, handleDelete }) => {
       <button
         onClick= {() => handleDelete(post)}
         className="btn is-delete"
-      >削除</button>
+      >投稿の破棄</button>
     </li>
   )
 }
