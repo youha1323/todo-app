@@ -6,8 +6,8 @@ type Props = {
 
 const GridArea = styled.div<Props>(props => `
   grid-area: ${props.area};
-  position: relative;
-  color: red;
+
+  color: blue;
 `);
 
 export default GridArea;

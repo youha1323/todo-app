@@ -9,5 +9,4 @@ export default class User  {
     this.clap=100;
     this.applause=0;
   }
-
 }

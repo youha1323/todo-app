@@ -3,6 +3,7 @@ import PostInput from '../PostInput';
 import PostList from '../PostList';
 import { Post } from '../../Types';
 import GridArea from '../../styles/GridArea';
+import Menu from '../Menu';
 //import styled from 'styled-components';
 
 type Props = {
@@ -20,6 +21,7 @@ const PostArea: React.FC<Props> = (props) => {
   return(
     <div>
       <GridArea area={area}>
+         <Menu />
          <PostInput posts={posts} setPosts={setPosts} />
          <PostList posts={posts} setPosts={setPosts}/>
       </GridArea>

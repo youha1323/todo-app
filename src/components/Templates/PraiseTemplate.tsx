@@ -4,8 +4,8 @@ import PostArea from '../Area/PostArea';
 import UserArea from '../Area/UserArea';
 
 enum Area {
-  PostArea = 'PostArea',
   UserArea = 'UserArea',
+  PostArea = 'PostArea',
 }
 
 // Gridの設定をし、areaを指定してOrganismsを呼び出す
@@ -23,7 +23,9 @@ export default PraiseTemplate;
 
 const GridLayout = styled.div`
   display: grid;
-  grid-template-colums: 30px 70px;
+  grid-template-rows: 200px 1fr;
+
   grid-template-areas:
-  "UserArea PostArea"
-`
+  " UserArea "
+  " PostArea "
+`;

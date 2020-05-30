@@ -10,7 +10,7 @@ h1 {
 }
 
 .inner {
-  max-width: 700px;
+  max-width: max-content;
   margin: 0 auto;
 }
 
@@ -32,10 +32,12 @@ h1 {
 
 .post-list li.done span {
   text-decoration: line-through;
+
 }
 
 .post-list li label {
-  width: calc(100% - 100px);
+  width: 1200px;
+  height: 50px;
   display: block;
   cursor: pointer;
 }
@@ -71,7 +73,7 @@ h1 {
 }
 .input-form .input {
   height:150px;
-  width: 80%;
+  width: 800px;
   font-size: 15px;
   outline: none;
   border: solid 3px #d7d2cd;
@@ -127,6 +129,13 @@ h1 {
 .btn.is-delete {
   background-color: #d86681;
   border-bottom-color: #956270;
+}
+
+.Menu-btn {
+  position: absolute;
+
+  margin-top: 150px;
+  margin-left: 50px;
 }
 
 .checkbox-input {
