@@ -1,5 +1,6 @@
 import React from 'react';
 import GridArea from 'src/styles/GridArea';
+import UserInfo from '../UserInfo';
 
 type Props = {
   area: string;
@@ -12,6 +13,7 @@ const UserArea: React.FC<Props> = (props) => {
     <div>
       <GridArea area = {area}>
         <h1>褒めるアプリ</h1>
+        <UserInfo />
       </GridArea>
     </div>
   );
