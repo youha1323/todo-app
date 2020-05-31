@@ -13,7 +13,7 @@ const PraiseTemplate: React.FC = () => {
   return (
     <GridLayout>
       <UserArea area={Area.UserArea} />
-      <PostArea area={Area.PostArea} />
+      <PostArea />
     </GridLayout>
   )
 }

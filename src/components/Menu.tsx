@@ -1,6 +1,7 @@
 import React, {useState, useRef, useEffect} from 'react';
 import Button from '../img/Button.png';
 
+
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false)
   const menuRef: any = useRef()
@@ -11,7 +12,10 @@ const Menu = () => {
 
   return (
     <div className = "Menu-btn">
-      <img  src={Button} alt="Button TAG" width="100" height="70" onClick={() => setIsOpen(isOpen ? false : true)} />
+      <img  src={Button} alt="Button TAG"
+        width="100" height="70"
+        onClick={() => setIsOpen(isOpen ? false : true)}
+      />
       {isOpen &&
         <ul  
           onBlur={() => setTimeout(() => setIsOpen(false), 100)} 

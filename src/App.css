@@ -9,6 +9,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  margin-left: 50px;
+}
+
 .inner {
   max-width: max-content;
   margin: 0 auto;
@@ -32,7 +36,7 @@ h1 {
 
 .post-list li.done span {
   text-decoration: line-through;
-
+  
 }
 
 .post-list li label {
@@ -114,7 +118,7 @@ h1 {
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
-  background: #668ad8;
+  background: #61abb8;
   color: #fff;
   border-bottom: solid 4px #627295;
   border-radius: 7px;

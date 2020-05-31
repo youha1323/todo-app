@@ -31,7 +31,7 @@ const PostInput: React.FC<Props> = ({posts, setPosts}) => {
 
       const newPost : Post = {
         id: count,
-        title: inputTitle+inputTime ,
+        title: inputTitle+inputTime,
         done: false,
       }
 

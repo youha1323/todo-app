@@ -12,7 +12,6 @@ const UserArea: React.FC<Props> = (props) => {
   return(
     <div>
       <GridArea area = {area}>
-        <h1>褒めるアプリ</h1>
         <UserInfo />
       </GridArea>
     </div>
