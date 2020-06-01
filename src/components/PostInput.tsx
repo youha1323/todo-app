@@ -16,6 +16,7 @@ const PostInput: React.FC<Props> = ({posts, setPosts}) => {
   const [inputTitle, setInputTitle] = useState('');
   const [inputTime, setInputTime] = useState('');
   const [count, setCount] = useState(posts.length + 1);
+
   const today = formatDate(new Date(), DateFormat.YY_MM_DD_dd_HH_mm);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -55,7 +56,6 @@ const PostInput: React.FC<Props> = ({posts, setPosts}) => {
         />
         <button　onClick={hundleSubmit} className="btn is-primary">投稿</button>
       </div>
-
     </div>
   )
 }

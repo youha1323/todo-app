@@ -15,7 +15,7 @@ const Clapbtn: React.FC = () => {
     <div>
       <button
          onClick={hundleClick}>
-         <img src={Clap} alt="clap Image" width= "30" height= "30"/>
+         <img src={Clap} alt="clap" width= "30" height= "30"/>
       </button>
     </div>
   );
