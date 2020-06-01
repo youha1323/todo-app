@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Clap from '../img/Clap.png';
+import '../App.css';
 
 const Clapbtn: React.FC = () => {
   const [clap, setClap] = useState(0);
@@ -14,8 +15,9 @@ const Clapbtn: React.FC = () => {
   return(
     <div>
       <button
-         onClick={hundleClick}>
-         <img src={Clap} alt="clap" width= "30" height= "30"/>
+        className = 'btn-clap'
+        onClick={hundleClick}>
+        <img src={Clap} alt="clap" width= "30" height= "30"/>
       </button>
     </div>
   );

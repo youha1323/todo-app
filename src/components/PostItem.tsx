@@ -26,10 +26,10 @@ const PostItem: React.FC<Props> = ({ post, handleDone, handleDelete }) => {
         <span className="checkbox-label">{ post.title}</span>  
       </label>
       <Clapbtn />
-      {/* <button
+      <button
         onClick= {() => handleDelete(post)}
         className="btn is-delete"
-      >投稿の破棄</button> */}
+      >投稿の破棄</button>
     </li>
   )
 }
