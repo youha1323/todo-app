@@ -1,5 +1,6 @@
 import React from 'react';
 import { Post } from '../Types';
+import Clapbtn from './Clapbtn';
 
 /*タスクアイテムはpropsでPostを受け取る*/
 type Props = {    
@@ -24,6 +25,7 @@ const PostItem: React.FC<Props> = ({ post, handleDone, handleDelete }) => {
         {/*postpropsを受け取るとpost.titleがcheckboxへ一覧で表示する作り*/}
         <span className="checkbox-label">{ post.title}</span>  
       </label>
+      <Clapbtn />
       <button
         onClick= {() => handleDelete(post)}
         className="btn is-delete"

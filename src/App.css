@@ -110,7 +110,6 @@ h2 {
   padding: 2px 5px;
 }
 
-
 .btn {
   font-size: 15px;
   cursor: pointer;
@@ -124,6 +123,7 @@ h2 {
   border-radius: 7px;
   outline: none;
 }
+
 .btn:active {
   transform: translateY(4px);
   border-bottom: none;
@@ -137,9 +137,15 @@ h2 {
 
 .Menu-btn {
   position: absolute;
-
   margin-top: 150px;
   margin-left: 50px;
+}
+
+.btn-clap {
+  position: relative;
+  margin-top: 100px;
+  float: left;
+  margin-right: 90px;
 }
 
 .checkbox-input {
