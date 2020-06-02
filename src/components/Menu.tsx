@@ -21,7 +21,7 @@ const Menu = () => {
           onBlur={() => setTimeout(() => setIsOpen(false), 100)} 
           ref={menuRef}
           tabIndex={2}
-         >
+        >
           <li><a href="/Jack.png">Jack</a></li>
           <li><a href="/Ami.png">Ami</a></li>
           <li><a href="/Tom.png">Tom</a></li>

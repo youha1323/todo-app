@@ -13,9 +13,9 @@ const PostArea: React.FC = () => {
 
   return(
     <div>
-         <Menu />
-         <PostInput posts={posts} setPosts={setPosts} />
-         <PostList posts={posts} setPosts={setPosts}/>
+        <Menu />
+        <PostInput posts={posts} setPosts={setPosts} />
+        <PostList posts={posts} setPosts={setPosts}/>
     </div>
   );
 }
